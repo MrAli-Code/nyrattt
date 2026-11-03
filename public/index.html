@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>Nyra AI</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/styles.css?v=20261102">
+</head>
+<body>
+  <canvas id="space-canvas"></canvas>
+
+  <div id="app">
+    <div id="loading">
+      <div class="spinner"></div>
+      <span id="loading-text">Loading Nyra...</span>
+    </div>
+
+    <div id="shell" class="hidden">
+      <header class="header">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <span>Nyra <span id="user-name"></span></span>
+        </div>
+        <button id="lang-btn" class="icon-btn" type="button" title="Change language">🌐</button>
+        <button id="theme-btn" class="icon-btn" type="button" title="Toggle theme">🌓</button>
+      </header>
+
+      <nav class="tabs" id="tabs-container"></nav>
+
+      <main class="content">
+        <div id="sec-models" class="section active"></div>
+        <div id="sec-routing" class="section"></div>
+        <div id="sec-preferences" class="section"></div>
+        <div id="sec-usage" class="section"></div>
+        <div id="sec-admin" class="section"></div>
+      </main>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="/app.js?v=20261102"></script>
+</body>
+</html>
